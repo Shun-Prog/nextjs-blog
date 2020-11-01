@@ -30,7 +30,7 @@ export function getSortedPostsData() {
     }
   })
 
-  return allPostsData.sort((a, b) => {
+  return allPostsData.sort((a: any, b: any) => {
     return a.date < b.date? 1 : -1
   })
 
